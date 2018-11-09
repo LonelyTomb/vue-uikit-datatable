@@ -1,5 +1,5 @@
 # vue-uikit-datatable
-
+A Simple Datatable for the UiKit 3.0 Framework
 # To Use
 Import the Datatable by using
 ```
@@ -56,7 +56,8 @@ export default {
   name: "UserControls",
   data() {
     return {
-      titles
+      titles,
+      usersList
     };
   },
   methods: {
@@ -96,7 +97,7 @@ Add the prop `search-attrs`
 
 ### Example
 ```
-<Datatable :search-attrs="SearchAttrs"></Datatable>
+<Datatable :search-attrs="searchAttrs"></Datatable>
 
 <script>
 export default{
