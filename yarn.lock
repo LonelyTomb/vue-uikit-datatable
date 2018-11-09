@@ -8850,6 +8850,11 @@ uglifyjs-webpack-plugin@^1.2.4:
     webpack-sources "^1.1.0"
     worker-farm "^1.5.2"
 
+uikit@^3.0.0-rc.21:
+  version "3.0.0-rc.21"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-rc.21.tgz#87c4ae1986e6b87ac8b2ee6140945632426238e5"
+  integrity sha512-g4FxdUNChGXwUR4alHLdqc23k1uEBOE/Sgbg9fWTjYD6Vp8/MRQxjcfAo73dlbhi0/YWpadNBaUQQdyaabYcwQ==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
