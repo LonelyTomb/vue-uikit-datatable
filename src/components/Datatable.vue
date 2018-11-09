@@ -16,7 +16,7 @@
                         <tbody>
                             <tr v-for="(item,index) in chunkedResult()" :key="item.id">
                                 <td v-if="checkboxFilter == true">
-                                    <input type="checkbox" name="checkbox-filter" id="checkbox-filter" class="uk-checkbox" :value="item.id" v-model="selected" @change="$emit('selected-change',selected)">
+                                    <input type="checkbox" name="checkbox-filter" id="checkbox-filter" class="uk-checkbox" :value="item.id || (Number(index) + (offset*limit) + 1)" v-model="selected" @change="$emit('selected-change',selected)">
                                 </td>
                                 <td>{{Number(index) + (offset*limit) + 1}}</td>
                                 <td v-for="{prop} in titles"> {{item[prop]}}</td>
@@ -110,8 +110,7 @@ export default {
       this.items = this.itemList.filter(item =>
         this.searchAttrs.some(
           search =>
-            item[search].toLowerCase().includes(this.searchTerm) ||
-            item.gender.startsWith(this.searchTerm)
+            item[search].toLowerCase().includes(this.searchTerm)
         )
       );
     }

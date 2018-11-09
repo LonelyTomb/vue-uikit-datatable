@@ -1,8 +1,8 @@
 import Vue from "vue";
-import DropDown from "./DropDown.vue";
+import Datatable from "./Datatable.vue";
 
 const Components = {
-    DropDown
+    Datatable
 }
 
 Object.keys(Components).forEach(name => {

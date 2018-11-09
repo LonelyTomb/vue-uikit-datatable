@@ -1,7 +1,7 @@
 {
     "name": "vue-uikit-datatable",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "main": "./dist/vue-uikit-datatable.common.js",
     "files": [
         "dist/*",
