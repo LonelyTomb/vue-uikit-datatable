@@ -17,7 +17,8 @@
           class="uk-table uk-table-hover uk-table-striped uk-table-responsive"
         >
           <thead>
-            <th></th>
+            
+            <th v-if="checkboxFilter == true"></th>
             <th>No.</th>
             <th v-for="{ name } in titles">{{ name }}</th>
           </thead>

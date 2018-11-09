@@ -67,9 +67,9 @@ export default {
 ```
 
 ## For Checkbox selection
-To toggle this, add the prop `checkbox-filter`
+Checkbox is on by default, to remove it use the prop `checkbox-filter`
 ```
-:checkbox-filter="true"
+:checkbox-filter="false"
 ```
 
 To process get the items selected, add `selected-change`
