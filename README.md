@@ -2,12 +2,11 @@
 > A Simple Datatable for the UiKit 3.0 Framework.
 
 > For npm: 
-
-```
+```shell
 npm install vue-uikit-datatable
 ```
 > For yarn
-```
+```shell
 yarn add vue-uikit-datatable
 ```
 
@@ -78,7 +77,7 @@ export default {
 ```
 
 ## For Checkbox selection
-Checkbox is on by default, to remove it use the prop `checkbox-filter`
+Checkbox selection is on by default, remove it by using the prop `checkbox-filter`
 ```jsx
 :checkbox-filter="false"
 ```
