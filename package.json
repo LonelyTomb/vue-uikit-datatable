@@ -1,8 +1,18 @@
 {
     "name": "vue-uikit-datatable",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "private": false,
+    "description": "A Simple Datatable for the UiKit 3.0 Framework",
+    "author": "Victory Garuba <garubav@gmail.com>",
+    "keywords": [
+        "vue", "uikit3", "datatable"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LonelyTomb/vue-uikit-datatable"
+    },
     "main": "./dist/vue-uikit-datatable.common.js",
+    "module": "src/components/index.js",
     "files": [
         "dist/*",
         "src/*",

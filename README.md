@@ -1,15 +1,26 @@
-# vue-uikit-datatable
-A Simple Datatable for the UiKit 3.0 Framework
+# __vue-uikit-datatable__
+> A Simple Datatable for the UiKit 3.0 Framework.
+
+> For npm: 
+
+```
+npm install vue-uikit-datatable
+```
+> For yarn
+```
+yarn add vue-uikit-datatable
+```
+
 # To Use
 Import the Datatable by using
-```
+```javascript
 import Vue from 'vue'
 import Datatable from 'vue-uikit-table'
 Vue.use(Datatable)
 ```
 
 ## Basic Example
-```
+```jsx
 <template>
     <section class="uk-container uk-section">
         <Datatable :titles="titles" :itemList="usersList"></Datatable>
@@ -68,18 +79,18 @@ export default {
 
 ## For Checkbox selection
 Checkbox is on by default, to remove it use the prop `checkbox-filter`
-```
+```jsx
 :checkbox-filter="false"
 ```
 
 To process get the items selected, add `selected-change`
 
-```
+```jsx
 @selected-change='function-to-handle-selected-items()'
 ```
 
 ### Example
-```
+```jsx
 <Datatable checkbox-filter="true" @selected-change='selected(items)'></Datatable>
 
 methods:{
@@ -91,12 +102,12 @@ selected(items) {
 
 ##  To Use Search Box
 Add the prop `search-attrs`
-```
+```jsx
 :searchAttrs="columns-to-be-searched"
 ```
 
 ### Example
-```
+```jsx
 <Datatable :search-attrs="searchAttrs"></Datatable>
 
 <script>
@@ -108,37 +119,4 @@ export default{
     }
 }
 </script>
-```
-
-# For Development 
-
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn run test:e2e
 ```
