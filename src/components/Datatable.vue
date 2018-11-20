@@ -30,7 +30,7 @@
                   name="checkbox-filter"
                   id="checkbox-filter"
                   class="uk-checkbox"
-                  :value="item.id || Number(index) + offset * limit + 1"
+                  :value="item"
                   v-model="selected"
                   @change="$emit('selected-change', selected);"
                 />

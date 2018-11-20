@@ -79,19 +79,22 @@ export default {
 ## For Checkbox selection
 Checkbox selection is on by default, remove it by using the prop `checkbox-filter`
 ```jsx
-:checkbox-filter="false"
+:checkbox-filter=false
 ```
 
 To process get the items selected, add `selected-change`
 
 ```jsx
-@selected-change='function-to-handle-selected-items()'
+@selected-change='function-to-handle-selected-items'
 ```
 
 ### Example
 ```jsx
-<Datatable checkbox-filter="true" @selected-change='selected(items)'></Datatable>
+<Datatable :checkbox-filter=true @selected-change='selected'></Datatable>
 
+data(){
+    items
+}
 methods:{
 selected(items) {
       console.log(items);
