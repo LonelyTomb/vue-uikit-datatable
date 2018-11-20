@@ -93,7 +93,7 @@ To process get the items selected, add `selected-change`
 <Datatable :checkbox-filter=true @selected-change='selected'></Datatable>
 
 data(){
-    items
+    items:[]
 }
 methods:{
 selected(items) {
