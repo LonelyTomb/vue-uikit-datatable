@@ -1,6 +1,6 @@
 {
     "name": "vue-uikit-datatable",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "private": false,
     "description": "A Simple Datatable for the UiKit 3.0 Framework",
     "author": "Victory Garuba <garubav@gmail.com>",
@@ -22,7 +22,6 @@
     ],
     "scripts": {
         "serve": "vue-cli-service serve",
-        "npm-build": "npm run build",
         "build": "vue-cli-service build",
         "build-bundle": "vue-cli-service build --target lib --dest lib --name vue-uikit-datatable ./src/components/index.js",
         "lint": "vue-cli-service lint",
