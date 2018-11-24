@@ -14,7 +14,7 @@
     "main": "./lib/vue-uikit-datatable.common.js",
     "module": "src/components/index.js",
     "files": [
-        "dist/*",
+        "lib/*",
         "src/*",
         "public/*",
         "*.json",
